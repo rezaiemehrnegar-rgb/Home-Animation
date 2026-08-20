@@ -152,7 +152,8 @@ class _RoomInfoRow extends StatelessWidget {
         Expanded(
           child: DefaultTextStyle(
             style: context.bodySmall.copyWith(
-              color: data == null ? context.textColor.withOpacity(.6) : null,
+              color:
+                  data == null ? context.textColor.withValues(alpha: .6) : null,
             ),
             child: label,
           ),
@@ -175,7 +176,7 @@ class _RoomInfoRow extends StatelessWidget {
                 style: GoogleFonts.montserrat(
                   fontWeight: FontWeight.w800,
                   fontSize: 12.sp,
-                  color: SHColors.textColor.withOpacity(.6),
+                  color: SHColors.textColor.withValues(alpha: .6),
                 ),
               ),
             ],
